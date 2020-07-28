@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 const readDir = new Promise ((resolve, reject) =>{
-    fs.readdir('/dir', (err, result) => {
+    fs.readdir('/', (err, result) => {
         if(err){
             reject(err)
         }
